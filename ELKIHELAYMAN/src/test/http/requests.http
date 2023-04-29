@@ -1,0 +1,90 @@
+###
+DELETE http://localhost:8080/employe/delete/1
+
+###
+GET http://localhost:8080/employe/find/all
+Authorization: Basic admin password
+
+<> 2023-02-11T172339.200.json
+<> 2023-02-11T172222.401.json
+<> 2023-02-11T172216.401.json
+<> 2023-02-11T172134.401.json
+<> 2023-02-11T172128.401.json
+
+###
+GET http://localhost:8080/employe/find/2
+
+<> 2023-02-11T165206.200.json
+
+###
+POST http://localhost:8080/employe/add
+Content-Type: application/json
+Authorization: Basic admin password
+
+
+{
+  "nom" : "law",
+  "prenom" : "law",
+  "fonction" : "law"
+}
+
+<> 2023-02-11T172400.401.json
+<> 2023-02-11T172354.200.json
+<> 2023-02-11T165310.200.json
+
+###
+POST http://localhost:8080/responsable/add
+Content-Type: application/json
+
+{
+  "nom" : "law",
+  "prenom" : "law",
+  "fonction" : "law"
+}
+
+<> 2023-02-11T171302.200.json
+<> 2023-02-11T165956.200.json
+<> 2023-02-11T165923.404.json
+
+###
+PUT http://localhost:8080/usine/addE/1/4
+
+<> 2023-02-11T171305.200.json
+<> 2023-02-11T171234.500.json
+
+###
+DELETE http://localhost:8080/usine/delete/1
+Authorization: Basic admin password
+
+
+###
+GET http://localhost:8080/type/find/all
+Authorization: Basic operateur password
+
+<> 2023-02-11T172612.200.json
+<> 2023-02-11T172557.403.json
+<> 2023-02-11T172537.401.json
+
+###
+DELETE http://localhost:8080/employe/delete/2
+
+###
+PUT http://localhost:8080/moteur/setK/5
+Content-Type: application/json
+Authorization: Basic responsable password
+
+{
+  "kilometrage" : 30
+}
+
+<> 2023-02-11T174222.200.json
+<> 2023-02-11T174059.200.json
+<> 2023-02-11T174053.403.json
+<> 2023-02-11T174042.403.json
+
+###
+GET http://localhost:8080/modele/find/all
+Authorization: Basic responsable password
+
+<> 2023-02-11T175231.200.json
+<> 2023-02-11T175219.403.json
